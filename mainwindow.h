@@ -13,11 +13,15 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);    
-    ~MainWindow();
+    MainWindow(QWidget *parent = nullptr);
 
     // Occurs when the user resizes the window and once at startup
     void resizeEvent(QResizeEvent * event);
+
+
+    // Don't put functions after this
+    ~MainWindow();
+
 private slots:
     void on_classMenuButton_clicked();
 
